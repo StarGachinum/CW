@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e4c1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: justify;
+    display: flex; /* Встановлюємо Flexbox для розташування елементів */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Центрування заголовка H2 */
+.centered-heading {
+    text-align: center;
+    margin-bottom: 40px; /* Відступ після заголовка */
+    font-size: 56px;
+}
+
+/* Стилі для контенту тексту та зображення */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px; /* Відступ між текстом і зображенням */
+    font-size: 32px; /* Збільшений розмір шрифту для основного тексту */
+    line-height: 1.6; /* Поліпшення читабельності */
+}
+
+.image-content {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    margin: 20px; /* Відступ між зображенням і текстом */
+}
+
+
+
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
